@@ -9,3 +9,5 @@ dependencies:
     - torch<1.8
     - torchvision<0.9
     - mlflow
+    - wandb
+    - smart_open
