@@ -1,0 +1,12 @@
+name: Text Rdcognizer
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      regularization: {type: float, default: 0.1}
+      model_class: {type: string, default: MLP}
+      data_class: {type: string, default: MNIST}
+      max_epochs: {type: int, default: 5}
+    command: "python3 training/run_experiment.py --model_class={model_class} --data_class={data_class} --max_epochs={max_epochs}"

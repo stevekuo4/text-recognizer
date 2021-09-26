@@ -1,0 +1,11 @@
+name: pytorch_example
+channels:
+  - conda-forge
+dependencies:
+  - python=3.6
+  - pip
+  - pip:
+    - pytorch-lightning
+    - torch<1.8
+    - torchvision<0.9
+    - mlflow
